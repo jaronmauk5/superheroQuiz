@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz App</title>
+	<link rel="stylesheet" href="css/quiz.css"/> 
+	<link href='https://fonts.googleapis.com/css?family=Yantramanav:400,900,500,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<img src="./images/Marvel-logo.png" id="logo">
+	<div class="page">
+		<div class= "intro-page">
+			<h1>Superhero Quiz</h1>
+			<a href="#" class="start-button">Start</a>
+		</div>
+	  <form class="question-form">
+	      <!-- questions -->
+	  </form>
+
+	  <div class="feedback-overlay answer-overlay">
+	  	<div class = "feedback-wrapper">
+		  	<h2 class = 'status'>Correct!</h2>
+		  	<h3 class = 'feedback'>Good Job!</h3>
+		  	<button class= "continue">Continue</button>
+	  	</div>
+	  </div>
+
+
+	  <div class="feedback-overlay results-overlay">
+	  	<div class = "feedback-wrapper">
+		  	<h2>You're Done!!</h2>
+		  	<h3 class='results'></h3>
+		  	<button class= "continue">Start Over</button>
+	  	</div>
+	  </div>
+
+	</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/quiz.js"></script>
+
+	
+	<script type="text/template" id="question-template">
+	  <div class="question">
+	  	<h1 class="title">Question Title</h1>
+	  	<div class="answers">
+	  	</div>
+	  	<button class="submit">Submit</button>
+	  </div>
+
+
+
+	</script>
+	
+</body>
+</html>
